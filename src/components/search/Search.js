@@ -4,16 +4,21 @@ import './Search.css';
 
 const Search = () => {
 
-//const MOVIES_API = `http://www.omdbapi.com/?i=tt3896198&apikey=d8dac6a8`;
+//const Old_MOVIES_API = `http://www.omdbapi.com/?i=tt3896198&apikey=d8dac6a8`;
+//const search = "https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&page=1&include_adult=false"
+//const MOVIES_DB_API = `https://api.themoviedb.org/3/movie/550?api_key=974253bce4d1b963fbb17879f0e9414c`;
+//const Trending-now = "https://api.themoviedb.org/3/movie/now_playing?api_key=974253bce4d1b963fbb17879f0e9414c"
+//const top-rated movies = "https://api.themoviedb.org/3/movie/top_rated?api_key=974253bce4d1b963fbb17879f0e9414c" 
   const [movies , setMovies] = useState([]);
   const [search, setsearch] = useState("")
-  const [query, setquery] = useState("batman")
+  const [query, setquery] = useState("harry potter")
   useEffect(()=>{
     const getMovies = async  () => {
-      const response = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=d8dac6a8`);
+      const response = await fetch(`
+      https://api.themoviedb.org/3/search/movie?api_key=974253bce4d1b963fbb17879f0e9414c&language=en-US&page=1&include_adult=false&query=${query}`);
       const data = await response.json();
-      setMovies(data.Search);
-      console.log(data.Search);
+      setMovies(data.results);
+      console.log(data.results);
     }
     getMovies()
   },[query]);
@@ -33,17 +38,17 @@ const Search = () => {
     
       
       <form className="form-control" onSubmit={getSearch}>
-        <input type='text' className="search-bar" onChange={updateSearch} />
-        <button className='search-btn'>search</button>
+        <input type='text' placeholder="Search" className="search-bar" onChange={updateSearch} />
+        <button className='search-btn'>Search</button>
       </form>
       <div className='movies'>
           {movies.map(movie => (
             <Movies 
-            key={movie.imdbID}
-            title={movie.Title}
-            image={movie.Poster}
-            year = {movie.Year}
-            type = {movie.Type}
+              key= {movie.id}
+              title= {movie.title}
+              image= {`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              year = {movie.release_date}
+              rate = {movie.vote_average}
             />
           ))}
       </div>

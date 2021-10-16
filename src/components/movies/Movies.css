@@ -4,18 +4,21 @@
     width: 200px;
     padding: 5px;
     margin: 7px 0;
-    background-color:tomato;
+    background-color:#0e0701;
     position: relative;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.4s;
+
 }
 .media:hover{
-    background-color: #DE781F;
+    background-color: #BF110C;
     color: white;
+    box-shadow: 0.5px 0.5px 16px 1px #fff;
 }
 
 .poster{
     border-radius: 5px;
+    cursor: pointer;
 }
 .title{
     width: 100%;
@@ -24,7 +27,8 @@
     padding: 7px 0;
 }
 .type{
-    width: 100%;
-    text-align: center;
-    
+    display:flex;
+    justify-content: space-between;
+    font-size: 14px;
+    text-transform: capitalize;
 }

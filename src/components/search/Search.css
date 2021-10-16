@@ -16,7 +16,7 @@
 .search-btn{
     padding: 4px 22px;
     margin: 6px 4px;
-    background: #1b1919;
+    background: #BF110C ; /*#1b1919 */
     border-radius:0.12em;
     color: #fff;
     font-size: 18px;
@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 .search-btn:hover{
-    box-shadow: 1px 1px 7px #000000;
+    box-shadow: 1px 1px 8px 1px #fff;
 }
 
 /*
