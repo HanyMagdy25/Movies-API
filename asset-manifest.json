@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Movies-API/static/css/main.ec75926c.chunk.css",
+    "main.css": "/Movies-API/static/css/main.9b90f181.chunk.css",
     "main.js": "/Movies-API/static/js/main.4b8a9b04.chunk.js",
     "main.js.map": "/Movies-API/static/js/main.4b8a9b04.chunk.js.map",
     "runtime-main.js": "/Movies-API/static/js/runtime-main.bd75e5ce.js",
@@ -8,14 +8,14 @@
     "static/js/2.6f952cab.chunk.js": "/Movies-API/static/js/2.6f952cab.chunk.js",
     "static/js/2.6f952cab.chunk.js.map": "/Movies-API/static/js/2.6f952cab.chunk.js.map",
     "index.html": "/Movies-API/index.html",
-    "static/css/main.ec75926c.chunk.css.map": "/Movies-API/static/css/main.ec75926c.chunk.css.map",
+    "static/css/main.9b90f181.chunk.css.map": "/Movies-API/static/css/main.9b90f181.chunk.css.map",
     "static/js/2.6f952cab.chunk.js.LICENSE.txt": "/Movies-API/static/js/2.6f952cab.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Movies-API/static/media/rows-red-seats-theater.db554900.jpg"
+    "static/media/App.css": "/Movies-API/static/media/rows-red-seats-theater.379189fd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bd75e5ce.js",
     "static/js/2.6f952cab.chunk.js",
-    "static/css/main.ec75926c.chunk.css",
+    "static/css/main.9b90f181.chunk.css",
     "static/js/main.4b8a9b04.chunk.js"
   ]
 }
