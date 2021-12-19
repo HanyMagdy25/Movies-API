@@ -21,7 +21,7 @@ const Trending = () => {
                 key= {moviee.id}
                 title= {moviee.title}
                 image= {`https://image.tmdb.org/t/p/w500${moviee.poster_path}`}
-                year = {moviee.release_date}
+                year = {moviee.release_date.substring(0, 4)}
                 rate = {moviee.vote_average}
                 />
             ))}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {BiCameraMovie} from 'react-icons/bi';
 import './Navbar.css';
@@ -6,31 +6,15 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
   
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
-  
-    const showButton = () => {
-      if (window.innerWidth <= 960) {
-        setButton(false);
-      } else {
-        setButton(true);
-      }
-    };
-  
-    useEffect(() => {
-      showButton();
-    }, []);
-  
-    window.addEventListener('resize', showButton);
 
     return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
 
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' className='navbar-logo' >
             <BiCameraMovie className='logo-mov'/> 
             Movix
           </Link>
@@ -41,27 +25,32 @@ const Navbar = () => {
 
           <ul className={click? "nav-menu active" : "nav-menu" }>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={handleClick}>
                 Home
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/movies' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/movies' className='nav-links' onClick={handleClick}>
                 Movies
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/trending' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/trending' className='nav-links' onClick={handleClick}>
                 Trending
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/top' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/top' className='nav-links' onClick={handleClick}>
                 Top
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/watchlist' className='nav-links' onClick={handleClick}>
+                WatchList
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/sign-up' className='nav-links' onClick={handleClick}>
                 Sign Up
               </Link>
             </li>

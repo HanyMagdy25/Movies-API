@@ -1,0 +1,54 @@
+.signUP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.two-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-field .search-field{
+    width: 50%;
+    padding: 7px 7px;
+    margin: 7px 7px;
+    border-radius: 1em;
+    border: none;
+    
+}
+.two-field .search-field:focus{
+    box-shadow: 1px 1px 18px 1px #fff;
+}
+.two-field .label-field{
+    font-size: 19px;
+    margin: 6px 0;
+    font-weight: 400;
+}
+
+.contentTextField{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.btn-form{
+    padding: 4px 22px;
+    margin: 6px 4px;
+    background: transparent;
+    border-radius:1em;
+    color: #fff;
+    font-size: 18px;
+    border:0.1em solid white;
+    cursor: pointer;
+    width:100%
+}
+.btn-form:hover{
+    box-shadow: 1px 1px 8px 1px #fff;
+}
+
+.err{
+    color: #ff2525;
+    font-size: 16px;
+    text-shadow: 1px 1px 10px #1e1a1a;
+}

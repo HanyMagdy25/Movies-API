@@ -91,7 +91,8 @@
   }
 
   .nav-menu.active {
-    background: #010100;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -100,15 +101,17 @@
 
   .nav-links {
     text-align: center;
+    margin: 10px 0;
     padding: 1rem 4rem;
     width: 100%;
     display: table;
   }
 
   .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
+    background-color: transparent;
+    color: #fff;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px #fff;
   }
 
   .navbar-logo {

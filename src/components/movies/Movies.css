@@ -1,19 +1,24 @@
+:root{
+    --main:#0e0701;
+    --first: darkmagenta;
+    --white-c: #fff;
+}
 .media{
     display: flex;
     flex-direction: column;
     width: 200px;
     padding: 5px;
     margin: 7px 0;
-    background-color:#0e0701;
+    background-color:var(--first);
     position: relative;
     border-radius: 10px;
     transition: background-color 0.4s;
 
 }
 .media:hover{
-    background-color: #BF110C;
-    color: white;
-    box-shadow: 0.5px 0.5px 16px 1px #fff;
+    background-color: transparent;
+    color: var(--white-c);
+    box-shadow: 0.5px 0.5px 16px 1px var(--white-c);
 }
 
 .poster{

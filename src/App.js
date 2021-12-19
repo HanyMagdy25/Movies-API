@@ -6,12 +6,18 @@ import Home from './components/pages/home/Home';
 import Movies from './components/movies/Movies';
 import Trending from './components/pages/trending/Trending';
 import Top from './components/pages/top/Top';
+import SignUp from './components/pages/sign up/SignUp';
+import WatchList from './components/pages/watchlist/WatchList';
+// import { GlobalProvider } from './components/context/GlobalState';
 
 
 const App = () => {
 
   
   return (
+    
+
+    
     <Router>
       <Navbar/>
       <Switch>
@@ -19,10 +25,13 @@ const App = () => {
         <Route path="/movies" component={Movies}  />
         <Route path="/trending" component={Trending}/>
         <Route path="/top" component={Top}/>
+        <Route path="/sign-up" component={SignUp}/>
+        <Route path="/watchlist" component={WatchList}/>
 
       </Switch>
       
     </Router>
+    
   );
 }
 
